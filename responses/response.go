@@ -3,10 +3,10 @@ package responses
 import "encoding/json"
 
 type Response struct {
-	Ok      bool        `json:"ok"`
-	Message string      `json:"message,omitempty"`
-	Error   string      `json:"error,omitempty"`
-	Result  interface{} `json:"object,omitempty"`
+	Ok      bool   `json:"ok"`
+	Message string `json:"message,omitempty"`
+	Error   string `json:"error,omitempty"`
+	Result  string `json:"object,omitempty"`
 }
 
 func (r *Response) JSON() string {
