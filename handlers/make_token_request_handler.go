@@ -9,6 +9,7 @@ import (
 )
 
 func MakeTokenRequestHandler(w http.ResponseWriter, r *http.Request) {
+	fmt.Println("heey")
 	err := r.ParseForm()
 	resp := responses.Response{}
 	if err != nil {
